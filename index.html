@@ -10,13 +10,14 @@
     />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/clear.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Header start -->
     <header class="nav">
       <div class="logo">
-        <img src="/img/qualityeducation.png" alt="Logo" />
-        <h1>Home</h1>
+        <img src="/img/logo.png" alt="Logo" />
+        <h1>StaphSec.edu</h1>
       </div>
       <nav class="navbar">
         <ul class="nav-list">
@@ -24,16 +25,54 @@
           <li class="list-item"><a href="profile.html">Profile</a></li>
           <li class="list-item"><a href="insights.html">Insights</a></li>
           <li class="list-item"><a href="policy.html">Policy</a></li>
-          <li class="list-item"><a href="contact.html">Contact</a></li>
+          <li class="list-item">
+            <a href="contact.html"> Contact Us</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Header end -->
 
     <main class="container">
-      <section class="section">
-        
+      <section class="section-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <h2>QUALITY EDUCATION</h2>
+          <p>
+            ensure inclusive and equitable quality education and promote
+            lifelong learning opportunities for all.
+          </p>
+          <div class="button">
+            <a href="#section-2"
+              >Find out more
+              <img src="/img/arrow.svg" alt="Arrow-circle" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-2" id="section-2">
+        <div class="grid-container">
+          <div class="grid">
+            <h3>
+              ensure inclusive and equitable quality education and promote
+              lifelong learning opportunities for all.
+            </h3>
+          </div>
+          <div class="grid">
+            <p>
+              Education liberates the intellect, unlocks the imagination and is
+              fundamental for self-respect. It is the key to prosperity and
+              opens a world of opportunities, making it possible for each of us
+              to contribute to a progressive, healthy society. Learning benefits
+              every human being and should be available to all.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

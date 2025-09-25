@@ -1,3 +1,8 @@
+:root {
+  --navbar: linear-gradient(to right, #a8e6cf, #dcedc1);
+  --list-item: #1b5e20;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -6,8 +11,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
-  padding: 0 1rem;
+  background: var(--navbar);
+  padding: 0 4rem;
+  box-shadow: 8px 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  width: 50%;
 }
 
 .navbar .nav-list {
@@ -20,13 +30,28 @@ body {
 
 .navbar .nav-list .list-item a {
   text-decoration: none;
-  color: #f3f3f3;
+  color: var(--list-item);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .nav .logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav .logo h1 {
+  font-size: 24px;
+  color: var(--list-item);
 }
 
 .nav .logo img {
   width: 50px;
+  border-radius: 4px;
+}
+
+.container {
+  margin: 0 4rem;
 }

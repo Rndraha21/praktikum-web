@@ -32,13 +32,26 @@
 }
 
 .navbar .nav-list .list-item a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
   color: var(--foreground);
   font-size: 18px;
   font-weight: 500;
+  position: relative;
+}
+
+.navbar .nav-list .list-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--foreground), var(--primary));
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar .nav-list .list-item:hover a::after {
+  width: 100%;
 }
 
 .nav .logo {

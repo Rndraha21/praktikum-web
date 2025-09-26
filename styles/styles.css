@@ -96,14 +96,10 @@
   text-decoration: none;
   color: #1b5e20;
   padding: 0.5rem 1rem;
-  margin: 1rem 0 1rem 1rem;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-  border-radius: 8px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .section-2 a:hover {
-  background: linear-gradient(to right, var(--secondary), var(--primary));
   transform: scale(1.1);
 }
 

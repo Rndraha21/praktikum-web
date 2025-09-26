@@ -17,7 +17,7 @@
 }
 
 /* Section-1 start */
-.section-1 {
+.section-home-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@
   backdrop-filter: blur(10px);
 }
 
-.section-1 .content {
+.section-home-1 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,12 +86,12 @@
 /* Section-1 end */
 
 /* Section-2 start */
-.section-2 {
+.section-home-2 {
   width: 100%;
   padding: 2rem 4rem 0 4rem;
 }
 
-.section-2 a {
+.section-home-2 a {
   display: inline-block;
   text-decoration: none;
   color: #1b5e20;
@@ -99,11 +99,11 @@
   margin-bottom: 1rem;
 }
 
-.section-2 a:hover {
+.section-home-2 a:hover {
   transform: scale(1.1);
 }
 
-.section-2 h2 {
+.section-home-2 h2 {
   text-align: left;
   padding-left: 1rem;
   font-size: 32px;
@@ -142,6 +142,167 @@
 /* Section-2 end */
 
 /* !HOME STYLING END*/
+
+/* !Kontak start */
+/* Section kontak */
+.section-kontak-1 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 4rem;
+}
+
+.section-kontak-1 .grid-container {
+  display: grid;
+  width: 100%;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+
+.section-kontak-1 .grid-container .todo-container {
+  grid-column: span 2;
+}
+
+.todo-container h2 {
+  font-size: 2rem;
+  background: linear-gradient(to right, var(--foreground), var(--primary));
+  background-clip: text;
+  color: transparent;
+}
+
+.todo-container .detail,
+.form-container .detail {
+  margin-bottom: 2rem;
+}
+
+.todo-container .list-todo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.todo-container .list-todo .todo {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border: 1px solid var(--foreground);
+  border-radius: 12px;
+}
+
+.form-container h2 {
+  font-size: 2rem;
+  color: transparent;
+  background: linear-gradient(to right, var(--foreground), var(--primary));
+  background-clip: text;
+}
+
+.section-kontak-1 form {
+  max-width: 500px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(1px);
+  border: 1px solid var(--foreground);
+  border-radius: 12px;
+}
+
+/* Styling form */
+.floating-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.3rem;
+}
+
+.form-group label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: var(--text-primary);
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  padding: 0 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid var(--secondary);
+  background: transparent;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 0.8rem;
+  color: #1b5e20;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1b5e20;
+}
+
+.section-kontak-1 button {
+  font-size: 1rem;
+  margin-top: 6rem;
+  color: var(--foreground);
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--foreground);
+  border-radius: 8px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.section-kontak-1 button:hover {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+}
+
+.footer-kontak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.footer-kontak a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-kontak .medsos {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.footer-kontak .medsos ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+
+/* !Kontak end */
 
 /* Responsive layout */
 @media (max-width: 600px) {

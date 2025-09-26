@@ -1,11 +1,10 @@
-/* Nav start */
-
 :root {
   --primary: #a8e6cf;
   --secondary: #dcedc1;
   --foreground: #1b5e20;
 }
 
+/* Nav start */
 .nav {
   display: flex;
   justify-content: space-between;

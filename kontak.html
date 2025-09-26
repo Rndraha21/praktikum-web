@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/global.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Header start -->
@@ -31,32 +32,132 @@
 
     <!-- Main section -->
     <main class="container">
-      <section class="section">
-        <h3>Masukkan keluhan anda</h3>
-        <form action="#" method="post">
-          <label for="user">user name: </label>
-          <input
-            type="text"
-            id="user"
-            name="user"
-            placeholder="masukkan user name"
-            required
-          />
-          <label for="pesan">pesan</label>
-          <input
-            type="text"
-            placeholder="silahkan masukkan pesan anda"
-            required
-          />
-          <button type="submit">kirim</button>
-        </form>
-        <br />
-        <p>
-          Jaangan ragu untuk menyampaikan keluhan anda dengan mengisi form di
-          atas atau bisa langsung menghubungi kontak di bawah ini! StaphSec.id .
-          Jl Wates km 5 yogyakarta 0815-22244-4556 stapseceducation@gmail.com
-        </p>
+      <section class="section-kontak-1">
+        <div class="grid-container">
+          <div class="todo-container">
+            <div class="detail">
+              <h2>Apa yang bisa kita lakukan?</h2>
+              <p>
+                Setiap orang dapat berkontribusi untuk mencapai Pendidikan
+                Berkualitas. Berikut adalah beberapa cara untuk memulai.
+              </p>
+            </div>
+            <div class="list-todo">
+              <div class="todo">
+                <h3>Jadi Sukarelawan</h3>
+                <p>
+                  Luangkan waktumu untuk mengajar atau membantu di
+                  sekolah-sekolah lokal yang membutuhkan.
+                </p>
+              </div>
+              <div class="todo">
+                <h3>Donasi</h3>
+                <p>
+                  Dukung organisasi tepercaya yang bekerja untuk menyediakan
+                  akses pendidikan bagi anak-anak di seluruh dunia.
+                </p>
+              </div>
+              <div class="todo">
+                <h3>Sebarkan Kesadaran</h3>
+                <p>
+                  Gunakan suaramu di media sosial untuk menyebarkan pentingnya
+                  SDG 4 dan mendorong aksi nyata.
+                </p>
+              </div>
+              <div class="todo">
+                <h3>Advokasi Kebijakan</h3>
+                <p>
+                  Dukung atau bergabunglah dengan inisiatif yang mendorong
+                  pemerintah dan pembuat kebijakan untuk memprioritaskan
+                  anggaran pendidikan, memastikan kesetaraan akses, dan
+                  meningkatkan kualitas kurikulum serta fasilitas.
+                </p>
+              </div>
+              <div class="todo">
+                <h3>Mendukung Pendidik</h3>
+                <p>
+                  Hargai dan dukung para guru dan tenaga pendidik. Pastikan
+                  mereka memiliki sumber daya, pelatihan, dan lingkungan kerja
+                  yang layak untuk dapat memberikan pengajaran terbaik.
+                </p>
+              </div>
+              <div class="todo">
+                <h3>Belajar Sepanjang Hayat</h3>
+                <p>
+                  Teruslah belajar dan kembangkan dirimu sendiri. Dengan menjadi
+                  pembelajar seumur hidup, kamu menjadi contoh dan turut
+                  menciptakan lingkungan di mana pendidikan dihargai secara
+                  berkelanjutan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Form start -->
+          <div class="form-container">
+            <div class="detail">
+              <h2>Hubungi kami</h2>
+              <p>
+                Jangan ragu untuk menyampaikan keluhan anda dengan mengisi form di bawah ini.
+              </p>
+            </div>
+            <form action="#" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="nama"
+                  name="user"
+                  placeholder=" "
+                  required
+                />
+                <label for="nama">Nama</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" placeholder=" " required />
+                <label for="email">Email</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="pesan"
+                  placeholder=" "
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="pesan">Pesan</label>
+              </div>
+              <button type="submit">Kirim</button>
+            </form>
+            <!-- Form end -->
+          </div>
+        </div>
       </section>
+
+      <footer class="footer-kontak">
+        <div>
+          <p>&copy; StaphSec</p>
+          <a href="index.html">&laquo; Kembali ke beranda</a>
+        </div>
+        <div class="medsos">
+          <ul>
+            <li>
+              <a href="https://instagram.com/awllisti" target="_blank">Miya</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/rfga_dvorac" target="_blank"
+                >Habib</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com/robin_ndraha" target="_blank"
+                >Robin</a
+              >
+            </li>
+          </ul>
+          <i data-feather="instagram"></i>
+        </div>
+      </footer>
     </main>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

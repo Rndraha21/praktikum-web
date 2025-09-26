@@ -1,0 +1,235 @@
+:root {
+  /* Warna utama */
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-primary: #1b5e20;
+
+  /* Warna tambahan untuk gradient */
+  --gradient-start: rgba(168, 230, 207, 1);
+  --gradient-mid: rgba(220, 237, 193, 1);
+  --gradient-end: rgba(255, 200, 200, 1);
+}
+
+.breadcrumb .container,
+header .container,
+main.container {
+  background: transparent;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 10px 0;
+}
+.breadcrumb .container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+.breadcrumb a {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 600;
+}
+.breadcrumb span {
+  color: rgba(0,0,0,0.6);
+}
+
+/* Header */
+header {
+  padding: 32px 0;
+}
+.container.hero {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container.hero > div:first-child {
+  flex: 1 1 520px;
+}
+.container.hero h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  color: var(--foreground);
+}
+.container.hero p {
+  margin: 0;
+  color: rgba(0,0,0,0.75);
+}
+
+/* Fokus kanan */
+.focus {
+  min-width: 220px;
+  max-width: 360px;
+  background: linear-gradient(
+    to bottom right,
+    var(--gradient-start) 10%,
+    var(--gradient-mid) 50%,
+    var(--gradient-end) 90%
+  );
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  color: var(--foreground);
+}
+.focus strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.focus ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* Card */
+.card-1,
+.card {
+  background: linear-gradient(
+    to bottom right,
+    var(--gradient-start),
+    var(--gradient-mid),
+    var(--gradient-end)
+  );
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  margin-top: 20px;
+  color: #222;
+}
+.card-1 h2 {
+  margin-top: 0;
+}
+
+/* Grid fitur */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+.card h3 {
+  margin: 0 0 8px;
+  color: var(--foreground);
+}
+.card p {
+  margin: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+/* Members / Anggota */
+.members-section {
+  margin-top: 26px;
+}
+.members-section h2 {
+  margin: 0 0 6px;
+  color: var(--foreground);
+}
+.members-section .muted {
+  color: rgba(0,0,0,0.6);
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.member {
+  background: rgba(255,255,255,0.95);
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.member:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.member img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--secondary);
+  display: block;
+  margin: 0 auto 10px;
+}
+.member h4 {
+  margin: 6px 0 4px;
+  font-size: 16px;
+  color: var(--foreground);
+}
+.member p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(0,0,0,0.6);
+}
+
+/* Sumber daya & tautan */
+.card a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin-top: 28px;
+  padding: 18px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.footer-content .muted {
+  color: rgba(0,0,0,0.6);
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container.hero {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .focus {
+    width: 100%;
+    order: 2;
+    margin-top: 12px;
+  }
+  .container.hero > div:first-child {
+    order: 1;
+  }
+  .container.hero h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    gap: 12px;
+  }
+  .member img {
+    width: 100px;
+    height: 100px;
+  }
+  .container.hero h1 {
+    font-size: 20px;
+  }
+}

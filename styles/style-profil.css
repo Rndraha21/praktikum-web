@@ -40,10 +40,12 @@
 .hero-section .hero {
   display: flex;
   gap: 2rem;
+  margin-bottom: 2rem;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .hero-section .hero > div:first-child {
   flex: 1 1 520px;
 }
@@ -57,7 +59,21 @@
   color: var(--text-secondary);
 }
 
-/* Fokus kanan */
+.hero-section .detail {
+  display: flex;
+}
+
+.hero-section .detail p {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.hero-section .detail img {
+  width: 200px;
+  object-fit: cover;
+}
+
 .focus {
   min-width: 220px;
   max-width: 360px;
@@ -126,7 +142,6 @@
   margin-top: 16px;
 }
 .member {
-  /* background: rgba(255, 255, 255, 0.95); */
   padding: 14px;
   border-radius: 10px;
   text-align: center;

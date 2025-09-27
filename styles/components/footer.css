@@ -1,18 +1,26 @@
+:root {
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-primary-footer: #000000;
+  --text-secondary-footer: #444444;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 .footer p {
-  color: var(--text-secondary);
+  color: var(--text-secondary-footer);
 }
 
 .footer a {
   text-decoration: none;
-  color: var(--text-secondary);
+  color: var(--text-secondary-footer);
 }
 .footer a:hover {
   text-decoration: underline;
@@ -35,6 +43,7 @@
   gap: 24px;
 }
 
-.footer-kontak .feather {
+.footer i.icon {
+  font-size: 1.5rem;
   color: var(--foreground);
 }

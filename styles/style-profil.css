@@ -1,15 +1,9 @@
 :root {
-  /* Warna utama */
   --primary: #a8e6cf;
   --secondary: #dcedc1;
   --foreground: #1b5e20;
   --text-primary: #000000;
   --text-secondary: #444444;
-
-  /* Warna tambahan untuk gradient */
-  --gradient-start: var(--primary);
-  --gradient-mid: var(--secondary);
-  --gradient-end: var(--text-primary);
 }
 
 /* Breadcrumb */
@@ -32,7 +26,8 @@
 }
 
 .hero-section {
-  height: 100vh;
+  min-height: 100vh;
+  flex: 1;
   width: 100%;
   padding: 4rem;
 }

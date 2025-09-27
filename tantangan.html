@@ -9,12 +9,18 @@
     <link rel="stylesheet" href="/styles/global.css" />
 
     <!-- page style -->
-     <link rel="stylesheet" href="styles/style-tantangan.css">
+    <link rel="stylesheet" href="styles/style-tantangan.css" />
 
     <!-- Components style -->
     <link rel="stylesheet" href="/styles/components/navbar.css" />
     <link rel="stylesheet" href="/styles/components/breadcrumb.css" />
     <link rel="stylesheet" href="/styles/components/footer.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header start -->
@@ -37,58 +43,127 @@
     </header>
     <!-- Header end -->
 
-    <main class="container tantangan">
-      <section class="section">
+    <main class="container">
+      <section class="section" id="hero">
+        <div class="breadcrumb">
+          <a href="#footer">#StaphSec</a>
+          <span>›</span>
+          <span>Tantangan</span>
+        </div>
         <h1>Tantangan</h1>
         <h2>Tantangan untuk mewujudkan pendidikan berkualitas</h2>
-      </section>
-      <p></p>
-      <ol>
-        <li><h3>Kesenjangan Akses dan Kualitas Pendidikan</h3>
-        <p> infrastruktur yang Tidak Merata Banyak daerah tertinggal masih mengalami
-        kekurangan fasilitas pendidikan yang memadai dan tidak merata. Akses
-        yang tidak setara terhadap teknologi dan internet menciptakan
-        kesenjangan dalam kualitas pendidikan, karena tidak semua siswa memiliki
-        perangkat dan koneksi yang dibutuhkan untuk belajar secara daring.</p></li>
-        <li><h3>Kualitas Guru dan Sumber Daya Manusia</h3>
-        <p> Kualitas Guru yang Rendah Masih ada kekurangan pada kualitas guru dan
-        kompetensi Sumber Daya Manusia (SDM) dalam pendidikan. Kurangnya
-        Pelatihan Terdapat keterbatasan sumber daya dan dukungan untuk pelatihan
-        guru, sehingga mereka tidak selalu siap dalam mengajarkan konsep-konsep
-        baru dan teknologi pendidikan</p></li>
-        <li><h3>Keterbatasan Sumber Daya</h3>
-        <p>Anggaran Pendidikan Meskipun anggaran pendidikan sudah digencarkan,
-        masih terdapat tantangan dalam alokasi dan pemerataan penggunaan
-        anggaran, terutama di daerah terpencil. Fasilitas Pembelajaran
-        Terbatasnya fasilitas pembelajaran menjadi salah satu penyebab rendahnya
-        prestasi siswa dan kualitas pendidikan secara keseluruhan</p></li>
-        <li><h3>Kurangnya Dukungan dan Keterlibatan Pemangku Kepentingan</h3>
-        <p> Partisipasi Orang Tua Kurangnya minat dan dukungan orang tua dalam
-        mendukung pendidikan anak dapat menghambat proses belajar, terutama saat
-        pembelajaran jarak jauh. Resistensi terhadap Perubahan Ada resistensi
-        terhadap perubahan di antara lembaga pendidikan dan pemangku
-        kepentingan, yang mempersulit integrasi konsep-konsep baru seperti
-        pendidikan untuk pembangunan berkelanjutan (ESD).</p></li>
-        <li><h3>Kurangnya Materi dan Kurikulum yang Relevan</h3>
-        <p> Integrasi Konsep Pembangunan Berkelanjutan Kurangnya integrasi
-        konsep-konsep pembangunan berkelanjutan ke dalam kurikulum dan praktik
-        pengajaran. Materi Kontekstual Materi pembelajaran perlu lebih
-        kontekstual agar relevan dengan kebutuhan dan tantangan yang dihadapi siswa</p></li>
+        <div class="grid-card">
+          <div class="card">
+            <div>
+              <i class="fas fa-school icon"></i>
+              <h3>Kesenjangan Akses dan Kualitas Pendidikan</h3>
+            </div>
+            <p>
+              Infrastruktur yang Tidak Merata Banyak daerah tertinggal masih
+              mengalami kekurangan fasilitas pendidikan yang memadai dan tidak
+              merata. Akses yang tidak setara terhadap teknologi dan internet
+              menciptakan kesenjangan dalam kualitas pendidikan, karena tidak
+              semua siswa memiliki perangkat dan koneksi yang dibutuhkan untuk
+              belajar secara daring.
+            </p>
+          </div>
+          <div class="card">
+            <div>
+              <i class="fas fa-chalkboard-teacher icon"></i>
+              <h3>Kualitas Guru dan Sumber Daya Manusia</h3>
+            </div>
+            <p>
+              Kualitas Guru yang Rendah Masih ada kekurangan pada kualitas guru
+              dan kompetensi Sumber Daya Manusia (SDM) dalam pendidikan.
+              Kurangnya Pelatihan Terdapat keterbatasan sumber daya dan dukungan
+              untuk pelatihan guru, sehingga mereka tidak selalu siap dalam
+              mengajarkan konsep-konsep baru dan teknologi pendidikan
+            </p>
+          </div>
+          <div class="card">
+            <div>
+              <i class="fas fa-chart-area icon"></i>
+              <h3>Keterbatasan Sumber Daya</h3>
+            </div>
+            <p>
+              Anggaran Pendidikan Meskipun anggaran pendidikan sudah
+              digencarkan, masih terdapat tantangan dalam alokasi dan pemerataan
+              penggunaan anggaran, terutama di daerah terpencil. Fasilitas
+              Pembelajaran Terbatasnya fasilitas pembelajaran menjadi salah satu
+              penyebab rendahnya prestasi siswa dan kualitas pendidikan secara
+              keseluruhan
+            </p>
+          </div>
+          <div class="card">
+            <div>
+              <i class="fa-solid fa-hand-fist icon"></i>
+              <h3>Kurangnya Dukungan dan Keterlibatan Pemangku Kepentingan</h3>
+            </div>
+            <p>
+              Partisipasi Orang Tua Kurangnya minat dan dukungan orang tua dalam
+              mendukung pendidikan anak dapat menghambat proses belajar,
+              terutama saat pembelajaran jarak jauh. Resistensi terhadap
+              Perubahan Ada resistensi terhadap perubahan di antara lembaga
+              pendidikan dan pemangku kepentingan, yang mempersulit integrasi
+              konsep-konsep baru seperti pendidikan untuk pembangunan
+              berkelanjutan (ESD).
+            </p>
+          </div>
+          <div class="card span">
+            <div>
+              <i class="fa-solid fa-triangle-exclamation icon"></i>
+              <h3>Kurangnya Materi dan Kurikulum yang Relevan</h3>
+            </div>
+            <p>
+              Integrasi Konsep Pembangunan Berkelanjutan Kurangnya integrasi
+              konsep-konsep pembangunan berkelanjutan ke dalam kurikulum dan
+              praktik pengajaran. Materi Kontekstual Materi pembelajaran perlu
+              lebih kontekstual agar relevan dengan kebutuhan dan tantangan yang
+              dihadapi siswa
+            </p>
+          </div>
+        </div>
 
-      <div class="highlight-box">
-        <p>
-        Integrasi Konsep Pembangunan Berkelanjutan Kurangnya integrasi
-        konsep-konsep pembangunan berkelanjutan ke dalam kurikulum dan praktik
-        pengajaran, materi Kontekstual materi pembelajaran perlu lebih
-        kontekstual agar relevan dengan kebutuhan dan tantangan yang dihadapi
-        siswa
-        </p>
-      </div>
+        <div class="highlight-box">
+          <p>
+            Integrasi Konsep Pembangunan Berkelanjutan Kurangnya integrasi
+            konsep-konsep pembangunan berkelanjutan ke dalam kurikulum dan
+            praktik pengajaran, materi Kontekstual materi pembelajaran perlu
+            lebih kontekstual agar relevan dengan kebutuhan dan tantangan yang
+            dihadapi siswa
+          </p>
+        </div>
+      </section>
     </main>
+
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 StaphSec Teknologi. All rights reserved.</p>
+    <footer class="footer" id="footer">
+      <div class="container-copy">
+        <p><strong>&copy; staphsec2025 — #LeadingSDG4</strong></p>
+        <p>&commat; staphsec2025</p>
+      </div>
+      <div class="medsos">
+        <ul>
+          <li>
+            <a href="https://instagram.com/rfga_dvorac" target="_blank"
+              >Habib</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/awllisti" target="_blank">Miya</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/robin_ndraha" target="_blank"
+              >Robin</a
+            >
+          </li>
+          <a
+            href="https://wa.me/6287718262967?text=Wow%20webnya%20keren%20banget%21%21%21"
+            target="_blank"
+            ><i class="fa-brands fa-square-whatsapp icon"></i
+          ></a>
+          <a href="#hero"><i class="fa-solid fa-angles-up"></i></a>
+        </ul>
       </div>
     </footer>
   </body>

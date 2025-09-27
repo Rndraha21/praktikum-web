@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="/styles/components/breadcrumb.css" />
     <link rel="stylesheet" href="/styles/components/footer.css" />
 
-    <!-- Feather icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header end -->
@@ -41,7 +44,7 @@
 
     <main class="container">
       <!-- pembukaan -->
-      <section class="hero-section">
+      <section class="hero-section" id="hero">
         <div class="breadcrumb">
           <a href="#profil">#StaphSec</a>
           <span>›</span>
@@ -65,8 +68,8 @@
                 adalah antivirus terbaik untuk melawan kemiskinan,
                 ketidaksetaraan, dan ketidakpastian. Nama "StaphSec"
                 terinspirasi dari <em>Staphylococcus</em>, kuman yang dapat
-                menyebar cepat. Visi kami adalah menyebarkan virus
-                positif berupa informasi dan kesadaran tentang pentingnya SDG 4
+                menyebar cepat. Visi kami adalah menyebarkan virus positif
+                berupa informasi dan kesadaran tentang pentingnya SDG 4
                 (Pendidikan Berkualitas) secepat mungkin dan seluas-luasnya.
                 Kami bukan ahli medis, tapi kami adalah pegiat informasi yang
                 berkomitmen untuk meracik konten-konten edukatif yang dapat
@@ -153,47 +156,50 @@
           <h3>Sumber Daya & Tautan</h3>
           <p class="muted">
             <a
-              href="https://www.bps.go.id/id/publication/2024/11/22/c20eb87371b77ee79ea1fa86/statistik-pendidikan-2024.html"
+              href="https://www.un.org/sustainabledevelopment/education/"
               target="_blank"
-              >Data</a
+              >United Nations</a
             >
-            · <a href="#">Pertemuan</a> ·
-            <a href="https://github.com/Rndraha21/praktikum-web">Publikasi</a>
+            · <a href="https://en.unesco.org/themes/education">UNESCO</a> ·
+            <a href="https://www.unicef.org/education">UNICEF</a>
+            ·
+            <a href="https://www.globalgoals.org/goals/4-quality-education/"
+              >Global Goals</a
+            >
           </p>
         </div>
       </section>
-
-      <footer class="footer">
-        <div class="container-copy">
-          <p><strong>&copy; staphsec2025 — #LeadingSDG4</strong></p>
-          <p>&commat; staphsec2025</p>
-        </div>
-        <div class="medsos">
-          <ul>
-            <li>
-              <a href="https://instagram.com/rfga_dvorac" target="_blank"
-                >Habib</a
-              >
-            </li>
-            <li>
-              <a href="https://instagram.com/awllisti" target="_blank">Miya</a>
-            </li>
-            <li>
-              <a href="https://instagram.com/robin_ndraha" target="_blank"
-                >Robin</a
-              >
-            </li>
-            <a
-              href="https://wa.me/6287718262967?text=Wow%20webnya%20keren%20banget%21%21%21"
-              target="_blank"
-              ><i data-feather="message-square" class="feather"></i
-            ></a>
-          </ul>
-        </div>
-      </footer>
     </main>
-    <script>
-      feather.replace();
-    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-copy">
+        <p><strong>&copy; staphsec2025 — #LeadingSDG4</strong></p>
+        <p>&commat; staphsec2025</p>
+      </div>
+      <div class="medsos">
+        <ul>
+          <li>
+            <a href="https://instagram.com/rfga_dvorac" target="_blank"
+              >Habib</a
+            >
+          </li>
+          <li>
+            <a href="https://instagram.com/awllisti" target="_blank">Miya</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/robin_ndraha" target="_blank"
+              >Robin</a
+            >
+          </li>
+          <a
+            href="https://wa.me/6287718262967?text=Wow%20webnya%20keren%20banget%21%21%21"
+            target="_blank"
+            ><i class="fa-brands fa-square-whatsapp icon"></i
+          ></a>
+          <a href="#hero"><i class="fa-solid fa-angles-up"></i></a>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

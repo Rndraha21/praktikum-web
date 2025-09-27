@@ -3,62 +3,66 @@
   --secondary: #dcedc1;
   --foreground: #1b5e20;
   --text-primary: #000000;
-  --text-secondary: #555555;
+  --text-secondary: #444444;
   --card-bg: #ffffff;
   --highlight-bg: #f8fff4;
 }
 
-.tantangan {
-  padding: 4rem 2rem;
-  max-width: 1100px;
-  margin: 0 auto;
+.section {
+  padding: 4rem;
+  width: 100%;
+  min-height: 100vh;
+  flex: 1;
 }
 
-.tantangan .section h1 {
+.section h1 {
   font-size: 32px;
   color: var(--foreground);
-  margin-bottom: 8px;
 }
 
-.tantangan .section h2 {
+.section h2 {
   font-size: 18px;
-  color: var(--text-secondary);
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 
-/* List tantangan */
-.challenge-list {
-  list-style: decimal;
-  padding-left: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-.challenge-list li {
-  background: var(--card-bg);
-  padding: 1.2rem;
+.grid-card .card {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.challenge-list li:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+.grid-card .card:hover {
+  transform: scale(1.05);
 }
 
-.challenge-list h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
+.grid-card .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.grid-card .card div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 1rem;
   color: var(--foreground);
 }
 
-.challenge-list p {
-  margin: 0;
-  color: var(--text-secondary);
-  font-size: 15px;
-  line-height: 1.6;
+.grid-card .card.span {
+  grid-column: span 2;
+}
+
+.grid-card .card .icon {
+  font-size: 2rem;
 }
 
 /* Highlight Box */

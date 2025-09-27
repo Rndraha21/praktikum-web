@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="/styles/components/breadcrumb.css" />
     <link rel="stylesheet" href="/styles/components/footer.css" />
 
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Header start -->
@@ -40,7 +44,7 @@
     <!-- Header end -->
 
     <main class="container">
-      <section class="section-home-1">
+      <section class="section-home-1" id="hero">
         <div class="overlay"></div>
         <div class="content">
           <h2>EDUKASI BERKUALITAS</h2>
@@ -50,8 +54,7 @@
           </p>
           <div class="button">
             <a href="#section-2"
-              >Selengkapnya
-              <img src="/img/arrow.svg" alt="Arrow-circle" />
+              >Selengkapnya <i class="fa-solid fa-angles-down"></i>
             </a>
           </div>
         </div>
@@ -138,10 +141,11 @@
         <a
           href="https://globalgoals.org/goals/4-quality-education/"
           target="_blank"
-          >Selengkapnya &raquo;</a
-        >
+          >Selengkapnya <i class="fa-solid fa-angles-right"></i
+        ></a>
       </section>
 
+      <!-- Footer -->
       <footer class="footer">
         <div class="container-copy">
           <p><strong>&copy; staphsec2025 — #LeadingSDG4</strong></p>
@@ -165,14 +169,12 @@
             <a
               href="https://wa.me/6287718262967?text=Wow%20webnya%20keren%20banget%21%21%21"
               target="_blank"
-              ><i data-feather="message-square" class="feather"></i
+              ><i class="fa-brands fa-square-whatsapp icon"></i
             ></a>
+            <a href="#hero"><i class="fa-solid fa-angles-up"></i></a>
           </ul>
         </div>
       </footer>
     </main>
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>

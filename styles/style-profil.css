@@ -3,31 +3,20 @@
   --primary: #a8e6cf;
   --secondary: #dcedc1;
   --foreground: #1b5e20;
-  --text-primary: #1b5e20;
+  --text-primary: #000000;
+  --text-secondary: #444444;
 
   /* Warna tambahan untuk gradient */
-  --gradient-start: rgba(168, 230, 207, 1);
-  --gradient-mid: rgba(220, 237, 193, 1);
-  --gradient-end: rgba(255, 200, 200, 1);
-}
-
-.breadcrumb .container,
-header .container,
-main.container {
-  background: transparent;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
+  --gradient-start: var(--primary);
+  --gradient-mid: var(--secondary);
+  --gradient-end: var(--text-primary);
 }
 
 /* Breadcrumb */
 .breadcrumb {
   padding: 10px 0;
 }
-.breadcrumb .container {
+.breadcrumb {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -39,82 +28,74 @@ main.container {
   font-weight: 600;
 }
 .breadcrumb span {
-  color: rgba(0,0,0,0.6);
+  color: var(--text-secondary);
 }
 
-/* Header */
-header {
-  padding: 32px 0;
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  padding: 4rem;
 }
-.container.hero {
+
+.hero-section .hero {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.container.hero > div:first-child {
+.hero-section .hero > div:first-child {
   flex: 1 1 520px;
 }
-.container.hero h1 {
+.hero-section .hero h1 {
   margin: 0 0 8px;
   font-size: 28px;
   color: var(--foreground);
 }
-.container.hero p {
+.hero-section .hero p {
   margin: 0;
-  color: rgba(0,0,0,0.75);
+  color: var(--text-secondary)
 }
 
 /* Fokus kanan */
 .focus {
   min-width: 220px;
   max-width: 360px;
-  background: linear-gradient(
-    to bottom right,
-    var(--gradient-start) 10%,
-    var(--gradient-mid) 50%,
-    var(--gradient-end) 90%
-  );
   border-radius: 10px;
-  padding: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  color: var(--foreground);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
-.focus strong {
-  display: block;
+.focus h2 {
   margin-bottom: 8px;
+  color: var(--foreground);
 }
 .focus ul {
   margin: 0;
   padding-left: 18px;
+  color: var(--text-secondary);
 }
 
 /* Card */
 .card-1,
 .card {
-  background: linear-gradient(
-    to bottom right,
-    var(--gradient-start),
-    var(--gradient-mid),
-    var(--gradient-end)
-  );
   border-radius: 12px;
-  padding: 18px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  margin-top: 20px;
-  color: #222;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  color: var(--text-secondary);
+  padding: 1rem;
 }
 .card-1 h2 {
+  color: var(--foreground);
   margin-top: 0;
 }
 
 /* Grid fitur */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .card h3 {
   margin: 0 0 8px;
@@ -122,19 +103,21 @@ header {
 }
 .card p {
   margin: 0;
-  color: rgba(0,0,0,0.65);
+  color: var(--text-secondary);
 }
 
 /* Members / Anggota */
 .members-section {
-  margin-top: 26px;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 4rem;
 }
 .members-section h2 {
   margin: 0 0 6px;
   color: var(--foreground);
 }
 .members-section .muted {
-  color: rgba(0,0,0,0.6);
+  color: var(--text-secondary);
 }
 
 .members {
@@ -144,25 +127,25 @@ header {
   margin-top: 16px;
 }
 .member {
-  background: rgba(255,255,255,0.95);
+  /* background: rgba(255, 255, 255, 0.95); */
   padding: 14px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.18s ease, box-shadow 0.18s ease;
+  margin-bottom: 2rem;
 }
 .member:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 .member img {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
+  width: 300px;
+  border-radius: 12px;
+  border: none;
   object-fit: cover;
   border: 3px solid var(--secondary);
   display: block;
   margin: 0 auto 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 5);
 }
 .member h4 {
   margin: 6px 0 4px;
@@ -172,7 +155,7 @@ header {
 .member p {
   margin: 0;
   font-size: 13px;
-  color: rgba(0,0,0,0.6);
+  color: var(--text-secondary);
 }
 
 /* Sumber daya & tautan */
@@ -186,7 +169,7 @@ header {
 
 /* Footer */
 footer {
-  border-top: 1px solid rgba(0,0,0,0.06);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
   margin-top: 28px;
   padding: 18px 0;
 }
@@ -198,7 +181,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer-content .muted {
-  color: rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-size: 13px;
 }
 

@@ -1,0 +1,176 @@
+:root {
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-primary: #f4f4f4;
+}
+
+/* !HOME STYLING START*/
+/* Section-1 start */
+.section-home-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 0 4rem;
+  background-image: url("/img/bg-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(10px);
+}
+
+.section-home-1 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  z-index: 1;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content h2 {
+  font-size: 4rem;
+}
+
+.content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.content .button:hover {
+  background: linear-gradient(to right, var(--secondary), var(--primary));
+  transform: scale(1.1);
+}
+
+.content .button img {
+  width: 20px;
+}
+
+.content .button a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--foreground);
+  padding: 0.5rem 1rem;
+}
+/* Section-1 end */
+
+/* Section-2 start */
+.section-home-2 {
+  width: 100%;
+  padding: 2rem 4rem 0 4rem;
+  margin: 0 auto;
+}
+
+.section-home-2 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1b5e20;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-home-2 a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.section-home-2 h2 {
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 32px;
+  color: var(--foreground);
+}
+
+.grid-container-1,
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.grid {
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.grid h3 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.grid p {
+  text-align: left;
+  font-size: 15px;
+}
+
+.grid-container-2 .grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 16px;
+}
+/* Section-2 end */
+/* !HOME STYLING END*/
+
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 1rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .section-1 {
+    margin-bottom: 1rem;
+  }
+
+  .section-2 {
+    padding: 0 1rem;
+  }
+
+  .grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .grid-container-2 .grid {
+    grid-column: span 2;
+  }
+
+  .grid h3 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  .grid p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}

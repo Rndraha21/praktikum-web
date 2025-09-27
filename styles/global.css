@@ -1,9 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
+:root {
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-primary: #f4f4f4;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(
+    180deg,
+    rgba(168, 230, 207, 1) 10%,
+    rgba(220, 237, 193, 1) 50%,
+    rgba(244, 244, 244, 1) 100%
+  );
+
 }
 
 html {

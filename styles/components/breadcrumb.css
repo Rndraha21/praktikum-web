@@ -1,0 +1,17 @@
+.breadcrumb {
+  padding: 10px 0;
+}
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+.breadcrumb a {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 600;
+}
+.breadcrumb span {
+  color: var(--text-secondary);
+}

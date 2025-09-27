@@ -31,7 +31,6 @@
   color: var(--text-secondary);
 }
 
-
 .hero-section {
   height: 100vh;
   width: 100%;
@@ -55,7 +54,7 @@
 }
 .hero-section .hero p {
   margin: 0;
-  color: var(--text-secondary)
+  color: var(--text-secondary);
 }
 
 /* Fokus kanan */
@@ -168,21 +167,45 @@
 }
 
 /* Footer */
-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  margin-top: 28px;
-  padding: 18px 0;
-}
-.footer-content {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  padding: 1rem 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
-.footer-content .muted {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 13px;
+
+.footer p {
+  color: var(--text-secondary);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .medsos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  justify-content: space-between;
+}
+
+.medsos .back-home {
+  text-align: right;
+}
+
+.footer .medsos ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+.footer-kontak .feather {
+  color: var(--foreground);
 }
 
 /* Responsive */

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 :root {
   --primary: #a8e6cf;
   --secondary: #dcedc1;
@@ -6,10 +8,9 @@
   --text-secondary: #444444;
 }
 
-/* !Kontak start */
 /* Section kontak */
 .section-kontak-1 {
-  display: flex;
+  /* display: flex; */
   position: relative;
   width: 100%;
   height: 100vh;
@@ -51,6 +52,15 @@
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.todo-container .todo h3 {
+  color: var(--foreground);
+}
+
+.todo-container .detail p,
+.todo-container .todo p {
+  color: var(--text-secondary);
 }
 
 .form-container h2 {
@@ -100,6 +110,7 @@
 
 .form-group textarea {
   resize: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .form-group input:focus + label,
@@ -133,32 +144,3 @@
 .section-kontak-1 button:hover {
   background: var(--foreground);
 }
-
-.footer-kontak {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 4rem;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
-}
-
-.footer-kontak a {
-  text-decoration: none;
-  color: black;
-}
-.footer-kontak a:hover {
-  text-decoration: underline;
-}
-
-.footer-kontak .medsos {
-  display: flex;
-  gap: 24px;
-  justify-content: space-between;
-}
-
-.footer-kontak .medsos ul {
-  list-style-type: none;
-  display: flex;
-  gap: 24px;
-}
-/* !Kontak end */

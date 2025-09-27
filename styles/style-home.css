@@ -3,9 +3,9 @@
   --secondary: #dcedc1;
   --foreground: #1b5e20;
   --text-primary: #f4f4f4;
+  --text-secondary: #444444;
 }
 
-/* !HOME STYLING START*/
 /* Section-1 start */
 .section-home-1 {
   display: flex;
@@ -119,11 +119,13 @@
   text-align: left;
   text-transform: uppercase;
   font-size: 1.3rem;
+  color: var(--text-secondary);
 }
 
 .grid p {
   text-align: left;
   font-size: 15px;
+  color: var(--text-secondary);
 }
 
 .grid-container-2 .grid {
@@ -132,8 +134,6 @@
   gap: 16px;
 }
 /* Section-2 end */
-/* !HOME STYLING END*/
-
 
 /* Responsive layout */
 @media (max-width: 600px) {

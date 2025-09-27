@@ -4,14 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Profil</title>
-    <link rel="stylesheet" href="style-profil.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="/styles/style-profil.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
+
+    <!-- Global style -->
     <link rel="stylesheet" href="/styles/global.css" />
+
+    <!-- Page style -->
+    <link rel="stylesheet" href="/styles/style-profil.css" />
+
+    <!-- Components style -->
+    <link rel="stylesheet" href="/styles/components/navbar.css" />
+    <link rel="stylesheet" href="/styles/components/breadcrumb.css" />
+    <link rel="stylesheet" href="/styles/components/footer.css" />
+
+    <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
@@ -48,7 +53,6 @@
             <p>
               Anggota yang terdiri dari orang-orang hebat dengan latar belakang
               pendidikan yang sangat baik.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, illum. In aut eaque quisquam mollitia velit molestiae non, cum nihil deserunt quos necessitatibus eos maiores itaque aliquam iure repellendus magni, dolores amet quod recusandae saepe aliquid. Deserunt iure porro laudantium iste dolores est! Vitae voluptatum reiciendis officiis laborum neque sit rem quam, quod eius voluptatibus aperiam voluptates maiores excepturi ratione deleniti pariatur repudiandae incidunt corporis perspiciatis adipisci quia explicabo doloribus! Accusantium consequuntur hic dolore nulla commodi expedita facilis praesentium ipsa quo amet doloribus sequi ad eaque laudantium, eos cupiditate! Commodi repellendus asperiores numquam vitae tempora autem debitis! Consectetur, ipsam minima!
             </p>
           </div>
           <div class="focus">
@@ -140,17 +144,37 @@
         </div>
       </section>
 
-      <footer>
-        <div class="footer-content">
-          <div>
-            <strong>© staphsec2025 — #LeadingSDG4</strong>
-            <div class="muted">@staphsec2025</div>
-          </div>
-          <div class="muted">
-            dibuat dengan hati dan perasaan curahan keringat.
-          </div>
+      <footer class="footer">
+        <div class="container-copy">
+          <p><strong>&copy; staphsec2025 — #LeadingSDG4</strong></p>
+          <p>&commat; staphsec2025</p>
+        </div>
+        <div class="medsos">
+          <ul>
+            <li>
+              <a href="https://instagram.com/rfga_dvorac" target="_blank"
+                >Habib</a
+              >
+            </li>
+            <li>
+              <a href="https://instagram.com/awllisti" target="_blank">Miya</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/robin_ndraha" target="_blank"
+                >Robin</a
+              >
+            </li>
+            <a
+              href="https://wa.me/6287718262967?text=Wow%20webnya%20keren%20banget%21%21%21"
+              target="_blank"
+              ><i data-feather="message-square" class="feather"></i
+            ></a>
+          </ul>
         </div>
       </footer>
     </main>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

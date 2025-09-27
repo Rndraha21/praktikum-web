@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer p {
+  color: var(--text-secondary);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .medsos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  justify-content: space-between;
+}
+
+.medsos .back-home {
+  text-align: right;
+}
+
+.footer .medsos ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+}
+
+.footer-kontak .feather {
+  color: var(--foreground);
+}

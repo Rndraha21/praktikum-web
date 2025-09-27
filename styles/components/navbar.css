@@ -58,12 +58,13 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
+  color: var(--foreground);
 }
 
 .nav .logo h1 {
   font-size: 24px;
   font-weight: 500;
-  color: var(--foreground);
 }
 
 .nav .logo img {

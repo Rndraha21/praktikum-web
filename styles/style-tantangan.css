@@ -1,0 +1,98 @@
+:root {
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-primary: #000000;
+  --text-secondary: #555555;
+  --card-bg: #ffffff;
+  --highlight-bg: #f8fff4;
+}
+
+.tantangan {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tantangan .section h1 {
+  font-size: 32px;
+  color: var(--foreground);
+  margin-bottom: 8px;
+}
+
+.tantangan .section h2 {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* List tantangan */
+.challenge-list {
+  list-style: decimal;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.challenge-list li {
+  background: var(--card-bg);
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.challenge-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.challenge-list h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: var(--foreground);
+}
+
+.challenge-list p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Highlight Box */
+.highlight-box {
+  background: var(--highlight-bg);
+  border-left: 4px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-box p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tantangan {
+    padding: 2rem 1rem;
+  }
+
+  .tantangan .section h1 {
+    font-size: 26px;
+  }
+
+  .tantangan .section h2 {
+    font-size: 16px;
+  }
+
+  .challenge-list h3 {
+    font-size: 18px;
+  }
+}

@@ -1,3 +1,11 @@
+:root {
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-breadcrumb-primary: #000000;
+  --text-breadcrumb-secondary: #444444;
+}
+
 .breadcrumb {
   padding: 10px 0;
 }
@@ -7,11 +15,13 @@
   align-items: center;
   font-size: 14px;
 }
-.breadcrumb a {
+
+.breadcrumb h4 {
   color: var(--foreground);
+}
+.breadcrumb a {
   text-decoration: none;
-  font-weight: 600;
 }
 .breadcrumb span {
-  color: var(--text-secondary);
+  color: var(--text-breadcrumb-secondary);
 }

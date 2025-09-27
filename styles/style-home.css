@@ -43,8 +43,12 @@
   margin-bottom: 1rem;
 }
 
-.content h2 {
+.content h3 {
   font-size: 4rem;
+}
+
+.content h3 > abbr {
+  text-decoration: none;
 }
 
 .content .button {
@@ -98,8 +102,6 @@
 
 .section-home-2 h2 {
   text-align: left;
-  padding-left: 1rem;
-  font-size: 32px;
   color: var(--foreground);
 }
 

@@ -1,0 +1,156 @@
+:root {
+  --primary: #a8e6cf;
+  --secondary: #dcedc1;
+  --foreground: #1b5e20;
+  --text-primary: #000000;
+  --text-secondary: #444444;
+  --highlight-bg: #f8fff4;
+}
+
+/* Hero/halaman utama */
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 4rem;
+}
+
+.hero-section h2 {
+  font-size: 2rem;
+  color: var(--foreground);
+  margin-bottom: 24px;
+}
+
+.card-container {
+  padding: 0 4rem 4rem;
+}
+
+.card-container .card {
+  background: var(--highlight-bg);
+  border-left: 4px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-container .card p {
+  color: var(--foreground);
+}
+
+.card-container .card a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.card-container .card a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content .content-img img {
+  width: 350px;
+}
+
+.content h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: var(--foreground);
+}
+
+.content p {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+/* Table */
+.container-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 4rem 5rem 4rem;
+}
+
+.container-table h2 {
+  font-size: 2rem;
+  color: var(--foreground);
+}
+
+.table {
+  width: 50%;
+  margin: 0 auto;
+  max-height: 550px;
+  overflow-y: scroll;
+  padding: 0 2rem;
+}
+
+.table-content {
+  border-collapse: collapse;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.table-content caption {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.table-content thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table-content th,
+.table-content td {
+  padding: 12px 15px;
+}
+
+.table-content tbody tr {
+  border-bottom: 1px solid var(--primary);
+}
+
+.table-content tbody td {
+  color: var(--text-secondary);
+}
+
+.table-content tfoot tr th {
+  text-align: left;
+  color: #009879;
+}
+
+.table-content tfoot tr td {
+  font-weight: bold;
+  color: #009879;
+}
+
+.table-content tfoot tr {
+  border-bottom: 2px solid #009879;
+}
+
+.table::-webkit-scrollbar {
+  width: 1px;
+}
+
+.table::-webkit-scrollbar-track {
+  background: var(--foreground);
+}
+
+.table::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+.table::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+
+}

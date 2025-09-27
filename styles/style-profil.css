@@ -4,25 +4,7 @@
   --foreground: #1b5e20;
   --text-primary: #000000;
   --text-secondary: #444444;
-}
-
-/* Breadcrumb */
-.breadcrumb {
-  padding: 10px 0;
-}
-.breadcrumb {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  font-size: 14px;
-}
-.breadcrumb a {
-  color: var(--foreground);
-  text-decoration: none;
-  font-weight: 600;
-}
-.breadcrumb span {
-  color: var(--text-secondary);
+  --highlight-bg: #f8fff4;
 }
 
 .hero-section {
@@ -44,9 +26,9 @@
 .hero-section .hero > div:first-child {
   flex: 1 1 520px;
 }
-.hero-section .hero h1 {
+.hero-section .hero h2 {
   margin: 0 0 8px;
-  font-size: 28px;
+  font-size: 2rem;
   color: var(--foreground);
 }
 .hero-section .hero p {
@@ -122,11 +104,17 @@
   height: 100vh;
   padding: 2rem 4rem;
 }
+
+.members-section .card p.title {
+  color: var(--foreground);
+}
+
 .members-section h2 {
   margin: 0 0 6px;
   color: var(--foreground);
 }
-.members-section .muted {
+
+.members-section .muted a {
   color: var(--text-secondary);
 }
 
@@ -165,6 +153,15 @@
   margin: 0;
   font-size: 13px;
   color: var(--text-secondary);
+}
+
+.members-section .card {
+  background: var(--highlight-bg);
+  border-left: 4px solid var(--primary);
+  padding: 1.2rem 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* Sumber daya & tautan */

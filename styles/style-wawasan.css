@@ -82,19 +82,18 @@
   color: var(--foreground);
 }
 
-.table {
+.table {  
   width: 50%;
   margin: 0 auto;
   max-height: 550px;
   overflow-y: scroll;
-  padding: 0 2rem;
+  padding: 2rem;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .table-content {
   border-collapse: collapse;
-  border-radius: 12px 12px 0 0;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -103,6 +102,14 @@
   font-size: 18px;
   margin-bottom: 1rem;
   color: var(--text-secondary);
+}
+
+.table-content thead {
+  position: sticky;
+  top: 0;
+  transform: translateY(-30px);
+  background-color: #009879; /* Pastikan ini ada */
+  z-index: 1; /* Opsional, untuk memastikan header selalu di atas */
 }
 
 .table-content thead tr {
@@ -119,6 +126,8 @@
 .table-content tbody tr {
   border-bottom: 1px solid var(--primary);
 }
+
+
 
 .table-content tbody td {
   color: var(--text-secondary);
@@ -142,15 +151,11 @@
   width: 1px;
 }
 
-.table::-webkit-scrollbar-track {
-  background: var(--foreground);
-}
 
 .table::-webkit-scrollbar-thumb {
-  background: var(--secondary);
+  background: var(--foreground);
 }
 
 .table::-webkit-scrollbar-thumb:hover {
   background: var(--foreground);
-
 }

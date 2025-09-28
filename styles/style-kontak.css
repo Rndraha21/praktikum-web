@@ -69,8 +69,8 @@
 }
 
 .form-container h2 {
-  font-size: 2rem;
   color: var(--foreground);
+  font-size: 2rem;
 }
 
 .section-kontak-1 form {
@@ -157,4 +157,31 @@
   box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.3),
     inset -4px -4px 5px rgba(255, 255, 255, 0.1);
   transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .section-kontak-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .section-kontak-1 .grid-container {
+    display: grid;
+    width: 100%;
+    gap: 12px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .todo-container .list-todo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .form-container {
+    margin-bottom: 2rem;
+  }
 }

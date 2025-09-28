@@ -7,7 +7,7 @@
   --highlight-bg: #f8fff4;
 }
 
-/* Hero/halaman utama */
+/* Halaman utama */
 .hero-section {
   min-height: 100vh;
   width: 100%;
@@ -53,6 +53,10 @@
   margin-bottom: 2rem;
 }
 
+.content .mobile {
+  display: none;
+}
+
 .content .content-img img {
   width: 350px;
 }
@@ -82,7 +86,7 @@
   color: var(--foreground);
 }
 
-.table {  
+.table {
   width: 50%;
   margin: 0 auto;
   max-height: 550px;
@@ -108,8 +112,8 @@
   position: sticky;
   top: 0;
   transform: translateY(-30px);
-  background-color: #009879; /* Pastikan ini ada */
-  z-index: 1; /* Opsional, untuk memastikan header selalu di atas */
+  background-color: #009879;
+  z-index: 1;
 }
 
 .table-content thead tr {
@@ -126,8 +130,6 @@
 .table-content tbody tr {
   border-bottom: 1px solid var(--primary);
 }
-
-
 
 .table-content tbody td {
   color: var(--text-secondary);
@@ -148,9 +150,8 @@
 }
 
 .table::-webkit-scrollbar {
-  width: 1px;
+  width: 0;
 }
-
 
 .table::-webkit-scrollbar-thumb {
   background: var(--foreground);
@@ -158,4 +159,38 @@
 
 .table::-webkit-scrollbar-thumb:hover {
   background: var(--foreground);
+}
+
+@media (max-width: 720px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .content .mobile {
+    display: block;
+  }
+
+  .content .full-screen {
+    display: none;
+  }
+
+  .container-table {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .card-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

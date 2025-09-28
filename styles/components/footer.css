@@ -28,22 +28,58 @@
 
 .footer .medsos {
   display: flex;
-  flex-direction: column;
   margin-bottom: 0;
   justify-content: space-between;
-}
-
-.medsos .back-home {
-  text-align: right;
-}
-
-.footer .medsos ul {
-  list-style-type: none;
-  display: flex;
   gap: 24px;
+}
+
+.footer .medsos .wa-arrow {
+  display: flex;
+  gap: 12px;
+}
+
+.footer .medsos .link-item {
+  display: flex;
+  gap: 12px;
+}
+
+.footer .medsos .mobile {
+  display: none;
 }
 
 .footer i.icon {
   font-size: 1.5rem;
   color: var(--foreground);
+}
+
+@media (max-width: 720px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem 1rem;
+    text-align: left;
+  }
+
+  .footer .container-copy strong {
+    display: none;
+  }
+
+  .footer .medsos {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer .medsos .link-item {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer .medsos .full-screen {
+    display: none;
+  }
+
+  .footer .medsos .mobile {
+    display: block;
+  }
 }

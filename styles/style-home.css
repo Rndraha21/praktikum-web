@@ -82,9 +82,8 @@
 /* Section-2 start */
 .section-home-2 {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 4rem 0 4rem;
-  margin: 0 auto;
 }
 
 .section-home-2 a {
@@ -139,41 +138,39 @@
 /* Section-2 end */
 
 /* Responsive layout */
-@media (max-width: 600px) {
-  html {
-    scroll-padding-top: 1rem;
-  }
-
-  .content h2 {
+@media (max-width: 720px) {
+  .content h3 {
     font-size: 2rem;
   }
 
-  .section-1 {
+  .section-home-1 {
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .section-2 {
-    padding: 0 1rem;
+  .section-home-2 {
+    padding: 2rem 0 1rem 1.2rem;
   }
 
   .grid-container-1 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 0;
   }
 
   .grid-container-2 .grid {
     grid-column: span 2;
+    padding: 8px;
   }
 
   .grid h3 {
     text-align: left;
-    text-transform: uppercase;
     font-size: 1.2rem;
   }
 
   .grid p {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 16px;
   }
 }

@@ -24,6 +24,7 @@
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 2rem;
+  color: var(--text-secondary);
 }
 
 .grid-card {
@@ -83,20 +84,14 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .tantangan {
-    padding: 2rem 1rem;
+@media (max-width: 720px) {
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .tantangan .section h1 {
-    font-size: 26px;
-  }
-
-  .tantangan .section h2 {
-    font-size: 16px;
-  }
-
-  .challenge-list h3 {
-    font-size: 18px;
+  .grid-card {
+    display: flex;
+    flex-direction: column;
   }
 }

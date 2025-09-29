@@ -86,6 +86,11 @@
   color: var(--foreground);
 }
 
+.container-table p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
 .table {
   width: 50%;
   margin: 0 auto;

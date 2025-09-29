@@ -22,6 +22,7 @@ qualityEducation/
 ├── .git/
 ├── img/
 │   ├── bg-img.png
+│   ├── logo.ico
 │   ├── logo.png
 │   ├── profiles/
 │   │   ├── habib.jpg

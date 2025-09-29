@@ -11,7 +11,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  border-top: 2px solid rgba(0, 0, 0, 0.15);
+  /* border-top: 12px solid rgba(0, 0, 0, 0.15); */
+
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--primary), var(--secondary)) 1;
 }
 
 .footer p {

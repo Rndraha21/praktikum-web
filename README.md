@@ -64,3 +64,4 @@ qualityEducation/
 - **Robin Ndraha** - Chief Technology Officer
 
 **Link**: <https://praktikum-web-staphsec.vercel.app/index.html>
+@staphsec 2025

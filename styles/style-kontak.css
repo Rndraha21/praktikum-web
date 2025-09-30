@@ -159,6 +159,14 @@
   transform: scale(0.98);
 }
 
+form #msg {
+  color: var(--foreground);
+}
+
+form .hidden {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 720px) {
   .section-kontak-1 {

@@ -11,7 +11,7 @@ btn.addEventListener("click", (e) => {
   msg.classList.toggle("hidden");
   setTimeout(() => {
     msg.classList.toggle("hidden");
-  }, 3000);
+  }, 5000);
 
   nama.value = "";
   email.value = "";

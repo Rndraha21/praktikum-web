@@ -1,6 +1,7 @@
 const msg = document.getElementById("msg");
 const btn = document.getElementById("btn-submit");
 
+// Fungsi ketika tombol submit di klik
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 
